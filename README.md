@@ -8,10 +8,10 @@ The current results tracked by the ASP.NET team are available [at this location]
 ## Components
 
 The benchmarking infrastructure is made of these components:
-- [Benchmarks](https://github.com/aspnet/benchmarks/tree/dev/src/Benchmarks), a web application that contains different scenarios to benchmark.
-- [BenchmarksServer](https://github.com/aspnet/benchmarks/tree/dev/src/BenchmarksServer), a web application that queues jobs that are able to run custom web applications to be benchmarked.
-- [BenchmarksClient](https://github.com/aspnet/benchmarks/tree/dev/src/BenchmarksClient), a web application that queues jobs that can create custom client loads on a web application.
-- [BenchmarksDriver](https://github.com/aspnet/benchmarks/tree/dev/src/BenchmarksDriver), a command-line application that can enqueue server and client jobs and display the results locally.
+- [Benchmarks](https://github.com/aspnet/benchmarks/tree/master/src/Benchmarks), a web application that contains different scenarios to benchmark.
+- [BenchmarksServer](https://github.com/aspnet/benchmarks/tree/master/src/BenchmarksServer), a web application that queues jobs that are able to run custom web applications to be benchmarked.
+- [BenchmarksClient](https://github.com/aspnet/benchmarks/tree/master/src/BenchmarksClient), a web application that queues jobs that can create custom client loads on a web application.
+- [BenchmarksDriver](https://github.com/aspnet/benchmarks/tree/master/src/BenchmarksDriver), a command-line application that can enqueue server and client jobs and display the results locally.
 - A database server that can run any or all of PostgreSql, Sql Server, MySql, MongoDb
 
 ## Setting up the infrastructure
@@ -68,7 +68,7 @@ dotnet run -c Debug `
  -n Json
 ```
 
-This will start the `Json` scenario using the `Benchmarks` application that is provided in https://github.com/aspnet/benchmarks/tree/dev/src/Benchmarks.
+This will start the `Json` scenario using the `Benchmarks` application that is provided in https://github.com/aspnet/benchmarks/tree/master/src/Benchmarks.
 You can use another application by setting the correct arguments described on [this page](https://github.com/aspnet/benchmarks/blob/dev/src/BenchmarksDriver/README.md).
 
 #### Selecting a database provider
